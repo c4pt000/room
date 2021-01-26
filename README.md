@@ -58,6 +58,25 @@ Enable new settings:
     a2enmod proxy proxy_http
     service apache2 restart
 
+Alternative Install Poker Network Software
+-----------------------------------------
+```
+sudo apt-get -y update; 
+
+sudo apt-get -y install build-essential checkinstall git-core mysql-server \
+                        python-pip python-twisted python-mysqldb \
+                        python-mysqldb-dbg memcached python-memcache \
+                        python-simplejson python-cjson python-cjson-dbg \
+                        python-libxml2 python-libxml2-dbg python-lxml \
+                        python-lxml-dbg python-libxslt1 python-libxslt1-dbg \
+                        python-pypoker-eval gettext; 
+sudo pip install git+git://github.com/pokermania/reflogging.git; 
+sudo pip install git+git://github.com/pokermania/pokerdistutils.git; 
+sudo pip install git+git://github.com/pokermania/pokerengine.git; 
+sudo pip install git+git://github.com/pokermania/pokerpackets.git; 
+git clone https://github.com/pokermania/pokernetwork.git pokernetwork; cd pokernetwork; sudo python setup.py configure -s mysql.root_user.password=password; sudo python setup.py configure -b; sudo python setup.py install; cd ..;
+```
+
 Install Python Poker Network Software
 -------------------------------------
 
