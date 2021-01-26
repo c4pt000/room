@@ -76,7 +76,9 @@ sudo pip install git+git://github.com/pokermania/reflogging.git;
 sudo pip install git+git://github.com/pokermania/pokerdistutils.git; 
 sudo pip install git+git://github.com/pokermania/pokerengine.git; 
 sudo pip install git+git://github.com/pokermania/pokerpackets.git; 
-git clone https://github.com/pokermania/pokernetwork.git pokernetwork; cd pokernetwork; sudo python setup.py configure -s mysql.root_user.password=password; sudo python setup.py configure -b; sudo python setup.py install; cd ..;
+
+apt-get install python-poker-network    # from precise
+
 ```
 
 
