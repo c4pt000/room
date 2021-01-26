@@ -77,53 +77,7 @@ sudo pip install git+git://github.com/pokermania/pokerpackets.git;
 git clone https://github.com/pokermania/pokernetwork.git pokernetwork; cd pokernetwork; sudo python setup.py configure -s mysql.root_user.password=password; sudo python setup.py configure -b; sudo python setup.py install; cd ..;
 ```
 
-Install Python Poker Network Software
--------------------------------------
 
-1. Install `reflogging`
-
-    git clone https://github.com/betco/reflogging.git
-    cd reflogging
-    ./setup.py install
-    cd ..
-
-2. Install `pokerengine`
-
-    git clone https://github.com/betco/pokerengine.git
-    cd pokerengine
-    ./setup.py install
-    cd ..
-
-3. Install `pokerdistutils`
-
-    git clone https://github.com/betco/pokerdistutils.git
-    cd pokerdistutils
-    ./setup.py install
-    cd ..
-
-4. Install `pokerpackets`
-
-    git clone https://github.com/betco/pokerpackets.git
-    cd pokerpackets
-    ./setup.py install
-    cd ..
-
-5. Install `python-pokereval`
-
-    apt-get install python-pypoker-eval
-
-6. Install `python-poker-network`
-
-    git clone https://github.com/betco/pokernetwork.git
-    cd pokernetwork
-
-There edit default.json (your probably need to change root_user only there) and run:
-
-    python setup.py configure -b
-
-This will generate bunch of config files. Review these, to make sure everything is sane. Then install it with:
-
-    ./setup.py install
 
 Install and configure Room
 --------------------------
