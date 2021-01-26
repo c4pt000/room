@@ -1,4 +1,4 @@
-Install under Ubuntu 11.10
+Install under Ubuntu 14.04
 ==========================
 
 Basic System Setup
