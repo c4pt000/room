@@ -60,6 +60,8 @@ Enable new settings:
 
 Alternative Install Poker Network Software
 -----------------------------------------
+python2 only
+------------
 ```
 sudo apt-get -y update; 
 
